@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Academic Assistant | AI & R Shiny Hub</title>
+  <meta name="description" content="AI-powered Academic Assistant with integrated R Shiny analytics, timetable tracking, syllabus inspector, and project mentor lookup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js for R Analytics rendering in Web App -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-icon">🎓</div>
+        <div class="logo-text">
+          <h2>Academic Hub</h2>
+          <span class="version-tag">AI + R Shiny v2.0</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" id="nav-chat" onclick="switchTab('chat')">
+          <span class="icon">💬</span> AI Query Chat
+        </button>
+        <button class="nav-item" id="nav-timetable" onclick="switchTab('timetable')">
+          <span class="icon">📅</span> Timetable
+        </button>
+        <button class="nav-item" id="nav-courses" onclick="switchTab('courses')">
+          <span class="icon">📚</span> Courses & Units
+        </button>
+        <button class="nav-item" id="nav-faculty" onclick="switchTab('faculty')">
+          <span class="icon">👨‍🏫</span> Faculty Profiles
+        </button>
+        <button class="nav-item" id="nav-projects" onclick="switchTab('projects')">
+          <span class="icon">🚀</span> Mini Projects
+        </button>
+        <button class="nav-item" id="nav-analytics" onclick="switchTab('analytics')">
+          <span class="icon">📊</span> R Data Analytics
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="r-status-box">
+          <div class="status-indicator online"></div>
+          <div class="r-text">
+            <strong>R Program Engine</strong>
+            <span>Shiny & Rscript Ready</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Banner Bar -->
+      <header class="top-header">
+        <div class="header-info">
+          <h1 id="page-title">AI Academic Query Assistant</h1>
+          <p id="page-subtitle">Interactive grounded answers powered by classical NLP & R statistics</p>
+        </div>
+        <div class="quick-stats">
+          <div class="stat-badge">
+            <span class="label">Degree</span>
+            <span class="value" id="hdr-degree">B.Tech AD</span>
+          </div>
+          <div class="stat-badge">
+            <span class="label">Semester</span>
+            <span class="value" id="hdr-sem">03 (AY 2024-25)</span>
+          </div>
+          <div class="stat-badge highlight">
+            <span class="label">Venue</span>
+            <span class="value">CSE LH-306</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- TAB 1: Chat Assistant -->
+      <section id="tab-chat" class="tab-pane active">
+        <div class="chat-grid">
+          <div class="chat-card">
+            <div class="chat-header">
+              <div class="bot-avatar">🤖</div>
+              <div>
+                <h3>Academic Assistant Bot</h3>
+                <span class="online-tag">● Grounded in KB Records</span>
+              </div>
+            </div>
+
+            <div class="chat-history" id="chat-history">
+              <div class="chat-message bot">
+                <div class="message-bubble">
+                  Hello! I'm your AI Academic Assistant powered by Python NLP & R Shiny analytics.
+                  Ask me questions like <em>"What is my next class?"</em>, <em>"Who handles Deep Learning?"</em>, or <em>"Show Monday's schedule"</em>.
+                </div>
+                <span class="timestamp">Just now</span>
+              </div>
+            </div>
+
+            <div class="quick-chips">
+              <span class="chip-label">Quick Suggestions:</span>
+              <button class="chip" onclick="askQuick('What is my next class?')">⚡ Next class?</button>
+              <button class="chip" onclick="askQuick('Show timetable for Monday')">📅 Monday schedule</button>
+              <button class="chip" onclick="askQuick('Who teaches Deep Learning Concepts?')">👨‍🏫 DL Faculty</button>
+              <button class="chip" onclick="askQuick('Who is mentor for Batch 1?')">🚀 Batch 1 Mentor</button>
+              <button class="chip" onclick="askQuick('What are unit 2 topics in OE-I?')">📖 Unit 2 OE-I</button>
+            </div>
+
+            <div class="chat-input-row">
+              <input type="text" id="user-question-input" placeholder="Type your academic question here..." onkeypress="handleEnterKey(event)">
+              <button id="send-btn" onclick="sendQuery()">
+                Send <span>➔</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- NLP Inspector Panel -->
+          <div class="inspector-card">
+            <div class="card-title">
+              <span class="icon">🔍</span> NLP Pipeline Inspector
+            </div>
+            
+            <div class="inspector-group">
+              <label>Normalized Question:</label>
+              <div class="inspector-box" id="insp-norm">Waiting for query...</div>
+            </div>
+
+            <div class="inspector-group">
+              <label>Detected Intent:</label>
+              <div id="insp-intent" class="intent-pill">UNKNOWN</div>
+            </div>
+
+            <div class="inspector-group">
+              <label>Extracted Entities:</label>
+              <pre class="inspector-json" id="insp-entities">{}</pre>
+            </div>
+
+            <div class="inspector-group">
+              <label>R Program Integration:</label>
+              <div class="r-badge-card">
+                <span class="r-icon">R</span>
+                <div>
+                  <strong>app.R Shiny Enabled</strong>
+                  <p>Execute <code>Rscript run_r_app.R</code> for native R Shiny GUI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: Timetable -->
+      <section id="tab-timetable" class="tab-pane">
+        <div class="card-box">
+          <div class="table-header-flex">
+            <h3>📅 Weekly Class Schedule & Periods</h3>
+            <div class="day-selector-pills" id="day-pills">
+              <button class="day-btn active" onclick="filterTimetable('All')">All Days</button>
+              <button class="day-btn" onclick="filterTimetable('Monday')">Monday</button>
+              <button class="day-btn" onclick="filterTimetable('Tuesday')">Tuesday</button>
+              <button class="day-btn" onclick="filterTimetable('Wednesday')">Wednesday</button>
+              <button class="day-btn" onclick="filterTimetable('Thursday')">Thursday</button>
+              <button class="day-btn" onclick="filterTimetable('Friday')">Friday</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table" id="timetable-tbl">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Period</th>
+                  <th>Time Slot</th>
+                  <th>Course Code</th>
+                  <th>Course Title</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="timetable-tbody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: Courses -->
+      <section id="tab-courses" class="tab-pane">
+        <div class="card-box">
+          <div class="course-select-row">
+            <label for="course-dropdown">Select Course:</label>
+            <select id="course-dropdown" onchange="renderCourseDetails()"></select>
+          </div>
+          <div id="course-detail-container" class="mt-4">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: Faculty -->
+      <section id="tab-faculty" class="tab-pane">
+        <div class="card-box">
+          <h3>👨‍🏫 Department Faculty Profiles</h3>
+          <div class="search-box-row">
+            <input type="text" id="faculty-search" placeholder="Search faculty name, department, or expertise..." onkeyup="filterFaculty()">
+          </div>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Faculty Name</th>
+                  <th>Designation</th>
+                  <th>Department</th>
+                  <th>Domain Expertise</th>
+                </tr>
+              </thead>
+              <tbody id="faculty-tbody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: Mini Projects -->
+      <section id="tab-projects" class="tab-pane">
+        <div class="card-box">
+          <h3>🚀 Mini Project Batches & Mentor Mapping</h3>
+          <div class="projects-grid" id="projects-container">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 6: R Analytics -->
+      <section id="tab-analytics" class="tab-pane">
+        <div class="analytics-grid">
+          <div class="card-box">
+            <h4>📊 Course Credits Breakdown (R Analytics)</h4>
+            <div class="chart-wrapper">
+              <canvas id="chart-credits"></canvas>
+            </div>
+          </div>
+          <div class="card-box">
+            <h4>⏱️ Weekly Period Load by Course</h4>
+            <div class="chart-wrapper">
+              <canvas id="chart-workload"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="card-box mt-4">
+          <h4>🧩 Mini Project Domain Allocations</h4>
+          <div class="chart-wrapper pie-wrapper">
+            <canvas id="chart-domains"></canvas>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

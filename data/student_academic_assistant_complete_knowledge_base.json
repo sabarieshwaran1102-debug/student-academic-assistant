@@ -1,0 +1,1396 @@
+{
+  "metadata": {
+    "name": "Student Academic Assistant Knowledge Base",
+    "version": "complete",
+    "purpose": "Classical-AI student assistant for II AI&DS Section B, Semester III",
+    "institution": "Dr. N.G.P. Institute of Technology",
+    "department": "Artificial Intelligence and Data Science",
+    "academic_year": "2026-2027",
+    "semester": "III",
+    "section": "B",
+    "method": [
+      "classical NLP",
+      "pattern matching",
+      "knowledge representation",
+      "rule-based reasoning",
+      "search/inference"
+    ],
+    "explicitly_not_used": [
+      "LLM",
+      "RAG",
+      "embeddings",
+      "vector database",
+      "neural network",
+      "machine-learning classifier"
+    ],
+    "source_documents": [
+      "Final_Timetable.pdf",
+      "Semester 3 Syllabus.pdf",
+      "II-B mini project.pdf",
+      "Academic Calendar image supplied in chat",
+      "AIDS faculty directory URL supplied in chat"
+    ]
+  },
+  "class": {
+    "year": 2,
+    "semester": 3,
+    "section": "B",
+    "venue": "D Block, Hall No. 621",
+    "class_advisor": "Mr. T. Satheesh",
+    "tutor": "Mrs. R. Madhuramya"
+  },
+  "periods": {
+    "I": {
+      "start": "08:45",
+      "end": "09:40"
+    },
+    "II": {
+      "start": "09:40",
+      "end": "10:35"
+    },
+    "III": {
+      "start": "10:50",
+      "end": "11:45"
+    },
+    "IV": {
+      "start": "11:45",
+      "end": "12:40"
+    },
+    "V": {
+      "start": "13:30",
+      "end": "14:25"
+    },
+    "VI": {
+      "start": "14:25",
+      "end": "15:20"
+    },
+    "VII": {
+      "start": "15:35",
+      "end": "16:30"
+    }
+  },
+  "courses": {
+    "22UMA301": {
+      "title": "Probability and Statistics",
+      "type": "Theory",
+      "credits": 3,
+      "hours": 45,
+      "ltpc": "3-0-0-3",
+      "faculty": [
+        "Dr. R. Kulandilvelu"
+      ],
+      "prerequisite": "Knowledge of basic Probability",
+      "units": {
+        "I": {
+          "title": "Probability and Random Variables",
+          "hours": 9,
+          "topics": [
+            "Probability",
+            "Conditional Probability",
+            "Bayes theorem",
+            "Discrete and Continuous Random Variables",
+            "Moment generating functions (Definition only)",
+            "Binomial distribution",
+            "Poisson distribution",
+            "Uniform distribution",
+            "Exponential distribution",
+            "Normal distribution"
+          ]
+        },
+        "II": {
+          "title": "Two-Dimensional Random Variables",
+          "hours": 9,
+          "topics": [
+            "Joint distributions",
+            "Marginal distributions",
+            "Conditional distributions",
+            "Covariance",
+            "Correlation"
+          ]
+        },
+        "III": {
+          "title": "Testing of Hypothesis",
+          "hours": 9,
+          "topics": [
+            "Sampling distributions",
+            "Estimation of parameters",
+            "Statistical hypothesis",
+            "Large sample tests based on Normal distribution for single mean",
+            "Small sample tests based on t, Chi-square and F distributions"
+          ]
+        },
+        "IV": {
+          "title": "Design of Experiments",
+          "hours": 9,
+          "topics": [
+            "One way classifications",
+            "Two way classifications",
+            "Completely randomized design",
+            "Randomized block design",
+            "Latin square design"
+          ]
+        },
+        "V": {
+          "title": "Statistical Quality Control",
+          "hours": 9,
+          "topics": [
+            "Control charts for measurements",
+            "Mean chart X",
+            "Range chart R",
+            "Control charts for attributes",
+            "p chart",
+            "c chart",
+            "np chart"
+          ]
+        }
+      },
+      "course_outcomes": [
+        "Apply the concepts of random variables and distributions",
+        "Use correlation techniques to study the properties of two-dimensional random variables",
+        "Solve different types of large and small sample problems by testing of hypothesis",
+        "Utilize the analysis of variance for experimental designs",
+        "Solve the quality control problems using statistical techniques"
+      ]
+    },
+    "22UAD301": {
+      "title": "Artificial Intelligence Techniques and Algorithms",
+      "type": "Theory",
+      "credits": 4,
+      "hours": 60,
+      "ltpc": "3-1-0-4",
+      "faculty": [
+        "Dr. I. Devi"
+      ],
+      "prerequisite": "Nil",
+      "units": {
+        "I": {
+          "title": "Introduction",
+          "hours": 12,
+          "topics": [
+            "Definitions",
+            "Foundation and History of AI",
+            "Characteristics of intelligent Agents",
+            "Structure of Agents",
+            "Concept of rationality",
+            "Agents and Environment",
+            "Nature of environment",
+            "Problem solving agent",
+            "Problem formulation",
+            "Example Problems"
+          ]
+        },
+        "II": {
+          "title": "Problem Solving and Search Algorithms",
+          "hours": 12,
+          "topics": [
+            "Problem-Solving Agents",
+            "Search algorithms",
+            "Uninformed Search strategies",
+            "Informed search strategies",
+            "Heuristic search strategies",
+            "Heuristic functions",
+            "Local search and optimization problems",
+            "Local search in continuous space",
+            "Adversarial Search",
+            "Minimax procedure",
+            "Alpha beta pruning",
+            "Constraint Satisfaction Problem",
+            "Defining CSP",
+            "Local search for CSP",
+            "Backtracking"
+          ]
+        },
+        "III": {
+          "title": "Knowledge and Reasoning",
+          "hours": 12,
+          "topics": [
+            "Logical Agents",
+            "Knowledge-Based Agents",
+            "Logic",
+            "Propositional Logic",
+            "Syntax and Semantics",
+            "A simple inference procedure",
+            "Reasoning patterns in propositional logic",
+            "First order logic",
+            "Syntax and semantics",
+            "Inference in First order logic",
+            "Unification and Lifting",
+            "Forward chaining",
+            "Backward chaining",
+            "Resolution"
+          ]
+        },
+        "IV": {
+          "title": "Knowledge Representation and Recognition Techniques",
+          "hours": 12,
+          "topics": [
+            "Ontological Engineering",
+            "Categories and Objects",
+            "Events",
+            "Mental Events and Mental Objects",
+            "Reasoning Systems for Categories",
+            "Reasoning with Default Information",
+            "Voice recognition",
+            "Face recognition",
+            "Handwriting recognition",
+            "Pattern recognition",
+            "Sequential pattern recognition",
+            "Object recognition by Appearance",
+            "Image recognition",
+            "Image segmentation",
+            "Morphological Image Processing"
+          ]
+        },
+        "V": {
+          "title": "Applications",
+          "hours": 12,
+          "topics": [
+            "AI applications",
+            "Expert systems",
+            "Representing and Using Domain Knowledge",
+            "Expert System Shells",
+            "Knowledge Acquisition",
+            "Language Models",
+            "Information Retrieval",
+            "Information Extraction",
+            "Natural Language Processing",
+            "Syntactic processing",
+            "Semantic Analysis",
+            "Discourse and Pragmatic Processing",
+            "Statistical Natural Language Processing",
+            "Spell Checking"
+          ]
+        }
+      },
+      "course_outcomes": [
+        "Compare AI with human intelligence and traditional information processing, and discuss its strengths and limitations",
+        "Analyze the various search strategies in the problems",
+        "Recognize the knowledge representation and learning methods of artificial intelligence",
+        "Apply recognition techniques, including machine learning algorithms, to identify patterns and features in large datasets",
+        "Apply basic principles of AI in solutions that required problem solving perception and learning"
+      ]
+    },
+    "22UCS305": {
+      "title": "Database Management Systems",
+      "type": "Theory",
+      "credits": 3,
+      "hours": 45,
+      "ltpc": "3-0-0-3",
+      "faculty": [
+        "Mr. T. Satheesh"
+      ],
+      "prerequisite": "Nil",
+      "units": {
+        "I": {
+          "title": "Database Fundamentals",
+          "hours": 9,
+          "topics": [
+            "Introduction",
+            "Database System Applications",
+            "Views of data",
+            "Data models",
+            "Database languages",
+            "Database system architecture",
+            "Introduction to relational databases",
+            "Relational Model",
+            "Structure of Relational Databases",
+            "Database Schema",
+            "Keys",
+            "Relational Query Languages",
+            "Relational algebra"
+          ]
+        },
+        "II": {
+          "title": "Entity Relationship Modeling and SQL",
+          "hours": 9,
+          "topics": [
+            "Database Design Process",
+            "ER model",
+            "ER diagrams",
+            "Enhanced ER Model",
+            "ER to Relational Mapping",
+            "SQL Basic Structure",
+            "Set Operations",
+            "Aggregate Functions",
+            "Sub queries",
+            "Nested Sub queries",
+            "Joins",
+            "Views",
+            "Index",
+            "Integrity Constraints",
+            "SQL data types and schemas",
+            "Authorization",
+            "Triggers"
+          ]
+        },
+        "III": {
+          "title": "Relational Database Design",
+          "hours": 9,
+          "topics": [
+            "Functional dependency",
+            "Decomposition using functional dependencies",
+            "Canonical Cover",
+            "First Normal Form",
+            "Second Normal Form",
+            "Third Normal Form",
+            "Boyce Codd Normal Form",
+            "Fourth Normal Form",
+            "Fifth Normal Form"
+          ]
+        },
+        "IV": {
+          "title": "Transaction and Concurrency Control",
+          "hours": 9,
+          "topics": [
+            "Transaction Concept",
+            "ACID properties",
+            "Transaction States",
+            "Serializability",
+            "Conflict serializability",
+            "View Serializability",
+            "Testing Serializability",
+            "Concurrency Control",
+            "Lock Based Protocols",
+            "Deadlocks",
+            "Multiple Granularity",
+            "Time stamp Based Protocols",
+            "Validation Based Protocols",
+            "Recovery System",
+            "Failure Classification",
+            "Storage",
+            "Recovery and Atomicity",
+            "Log based Recovery Algorithm"
+          ]
+        },
+        "V": {
+          "title": "Implementation Techniques and Query Processing",
+          "hours": 9,
+          "topics": [
+            "RAID",
+            "File organization",
+            "Organization of records in files",
+            "Data dictionary Storage",
+            "Indexing and hashing",
+            "Ordered indices",
+            "B+ Tree index files",
+            "B Tree index files",
+            "Static hashing",
+            "Dynamic hashing",
+            "Query Processing",
+            "Measures of Query Cost",
+            "Selection",
+            "Join Operation",
+            "Query Optimization"
+          ]
+        }
+      },
+      "course_outcomes": [
+        "Explain architecture and evolution of database management systems and relational algebra",
+        "Design database using ER model",
+        "Design relational databases using normalization methods for a given application",
+        "Assess different types of scheduling and recovery techniques for concurrent transactions",
+        "Describe the indexing strategies and query processing"
+      ]
+    },
+    "22UAD302": {
+      "title": "Structured Programming",
+      "type": "Theory/Laboratory",
+      "credits": 2,
+      "hours": 30,
+      "ltpc": "1-0-2-2",
+      "faculty": [
+        "Mrs. R. Madhuramya"
+      ],
+      "units": {
+        "I": {
+          "title": "Operators and Control Structures",
+          "hours": 5,
+          "topics": [
+            "Overview of C",
+            "Operators",
+            "Conditional operators",
+            "Loops",
+            "while loop",
+            "for loop",
+            "Odd loop",
+            "break statement",
+            "continue statement",
+            "do while loop",
+            "Decisions using switch",
+            "switch vs if else ladder",
+            "goto statement"
+          ]
+        },
+        "II": {
+          "title": "Arrays and Structures",
+          "hours": 5,
+          "topics": [
+            "Introduction to Arrays",
+            "Declaration",
+            "Initialization",
+            "One dimensional array",
+            "Two dimensional arrays",
+            "Character array",
+            "String operations",
+            "length",
+            "compare",
+            "concatenate",
+            "copy",
+            "Structures"
+          ]
+        },
+        "III": {
+          "title": "Functions and Pointers",
+          "hours": 5,
+          "topics": [
+            "Modular programming",
+            "Function prototype",
+            "Function definition",
+            "Function call",
+            "Built-in functions",
+            "String functions",
+            "Math functions",
+            "Recursion",
+            "Binary Search using recursive functions",
+            "Pointers",
+            "Pointer operators",
+            "Pointer arithmetic",
+            "Arrays and pointers",
+            "Array of pointers",
+            "Parameter passing",
+            "Pass by value",
+            "Pass by reference"
+          ]
+        }
+      },
+      "lab_experiments": [
+        "I/O statements, operators, expressions",
+        "Decision-making constructs: if-else, goto, switch-case, break-continue",
+        "Loops: for, while, do-while",
+        "Arrays: 1D and 2D, Multi-dimensional arrays, structures",
+        "Strings: operations and Pointer Operations",
+        "Functions"
+      ],
+      "course_outcomes": [
+        "Develop simple applications in C using basic constructs",
+        "Design and implement applications using arrays and strings",
+        "Develop applications in C using Functions and pointers"
+      ]
+    },
+    "22UAD303": {
+      "title": "R Programming",
+      "type": "Theory/Laboratory",
+      "credits": 2,
+      "hours": 15,
+      "ltpc": "1-0-2-2",
+      "faculty": [
+        "Ms. S. Sowmyha"
+      ],
+      "units": {
+        "I": {
+          "title": "Basics of R Programming",
+          "hours": 5,
+          "topics": [
+            "Overview of R",
+            "R data types and objects",
+            "reading and writing data",
+            "Packages in R",
+            "Complex numbers in R",
+            "Rounding",
+            "Arithmetic",
+            "Modulo and integer quotients",
+            "Control structures",
+            "functions",
+            "scoping rules",
+            "dates and times",
+            "Introduction to Functions"
+          ]
+        },
+        "II": {
+          "title": "Vectors and Lists",
+          "hours": 5,
+          "topics": [
+            "Vectors",
+            "Generating sequences",
+            "Vectors and subscripts",
+            "Common Vector Operations",
+            "Lists",
+            "Creating Lists",
+            "General List Operations",
+            "List Indexing",
+            "Adding and Deleting List Elements",
+            "Getting the Size of a List"
+          ]
+        },
+        "III": {
+          "title": "Data Frames and Tables",
+          "hours": 5,
+          "topics": [
+            "Data Frames",
+            "Creating Data Frames",
+            "Accessing Data Frames",
+            "Other Matrix-Like Operations",
+            "Factors and Levels",
+            "Working with Tables",
+            "Matrix/Array-Like Operations on Tables",
+            "Table Operations",
+            "Math Functions"
+          ]
+        }
+      },
+      "lab_experiments": [
+        "Complex number and arithmetic operations",
+        "Control structures",
+        "Vectors",
+        "Lists",
+        "Data Frames and Tables"
+      ],
+      "course_outcomes": [
+        "Explore basic data types and use R objects with control structures for computations",
+        "Use vectors and lists to perform data computations",
+        "Perform data manipulation using data frames and tables"
+      ]
+    },
+    "22UOC203": {
+      "title": "தமிழரும் மதநுட்பமும்",
+      "type": "Theory",
+      "credits": 1,
+      "hours": 15,
+      "ltpc": "1-0-0-1",
+      "units": {
+        "I": {
+          "title": "நெசவு மற்றும் பானைத் தொழில் நுட்பம்",
+          "hours": 3
+        },
+        "II": {
+          "title": "வடிவமைப்பு மற்றும் கட்டிடத் தொழில் நுட்பம்",
+          "hours": 3
+        },
+        "III": {
+          "title": "வேளாண்மை தொழில் நுட்பம் மற்றும் உற்பத்தித் தொழில் நுட்பம்",
+          "hours": 3
+        },
+        "IV": {
+          "title": "அறிவியல் தமிழ்",
+          "hours": 3
+        },
+        "V": {
+          "title": "கணித்தமிழ்",
+          "hours": 3
+        }
+      },
+      "source_note": "The uploaded PDF OCR for this Tamil-language course is partially corrupted. The unit titles are preserved from the visible syllabus page; exact topic-level Tamil answers should use the original page rather than reconstructed text."
+    },
+    "22UOC101": {
+      "title": "Design Thinking",
+      "type": "Theory",
+      "credits": 1,
+      "hours": 15,
+      "ltpc": "1-0-0-1",
+      "prerequisite": "Nil",
+      "modules": {
+        "I": {
+          "title": "Overview of Design Thinking Process",
+          "hours": 7,
+          "topics": [
+            "Definition of design thinking",
+            "Origin of design thinking",
+            "Importance of design thinking",
+            "Problem solving",
+            "Understanding design thinking and its process model",
+            "Design thinking tools",
+            "Human Centered Design (HCD) process",
+            "Karmic design thinking process"
+          ]
+        },
+        "II": {
+          "title": "Design Thinking Practice",
+          "hours": 8,
+          "topics": [
+            "Empathize",
+            "Role of empathy in design thinking",
+            "Customer journey mapping",
+            "How might we questions",
+            "Analyze or Define",
+            "Root cause analysis",
+            "Conflict of interest",
+            "Solve or Ideate",
+            "Silent brainstorming",
+            "Introduction to TRIZ",
+            "Test",
+            "Prototyping and Validation",
+            "Prototyping",
+            "Validation in the market"
+          ]
+        }
+      },
+      "course_outcomes": [
+        "Demonstrate knowledge of design thinking process",
+        "Apply human centered design (HCD) methodology for product or service design"
+      ]
+    },
+    "22UAD304": {
+      "title": "Artificial Intelligence Laboratory",
+      "type": "Laboratory",
+      "credits": 2,
+      "hours": 60,
+      "ltpc": "0-0-4-2",
+      "faculty": [
+        "Dr. I. Devi",
+        "Ms. S. Pavithra",
+        "Ms. M. Sarmila"
+      ],
+      "experiments": [
+        "Implement basic search strategies: 8-Puzzle, 8-Queens problem, Cryptarithmetic",
+        "Implementation of Breadth First and Depth First searching techniques",
+        "Executing state space search algorithms: Hill climbing and A*",
+        "Solve constraint satisfaction problems",
+        "Prepare propositional model checking algorithms",
+        "Implement forward chaining, backward chaining, and resolution strategies",
+        "Prepare Minimax algorithm for game playing",
+        "Solving Prisoner's Dilemma",
+        "Designing a Chatbot application",
+        "Mini-Project"
+      ],
+      "course_outcomes": [
+        "Apply search techniques and knowledge representation schemes",
+        "Design and implement search strategies",
+        "Implement game playing and CSP techniques",
+        "Develop logical reasoning systems",
+        "Apply various techniques to solve real world problems"
+      ]
+    },
+    "22UCS406": {
+      "title": "Database Management Systems Laboratory",
+      "type": "Laboratory",
+      "credits": 2,
+      "hours": 60,
+      "ltpc": "0-0-4-2",
+      "faculty": [
+        "Mr. T. Satheesh",
+        "Ms. S. Sarmila",
+        "Ms. N. Padmashri"
+      ],
+      "experiments": [
+        "Create relational database system using Data Definition Commands and Data Manipulation Commands",
+        "Query the database using simple queries and Sub queries",
+        "Create Database tables and Joins",
+        "Create and Update Views",
+        "Illustrate the concept of looping",
+        "Perform operations in SQL for Procedures and Functions",
+        "Creation of database triggers",
+        "Implementation of Cursor and its operations",
+        "Database Connectivity using ODBC",
+        "Develop a simple GUI based database application"
+      ],
+      "course_outcomes": [
+        "Develop SQL commands to create and manipulate databases",
+        "Design applications to test Nested and Join Queries",
+        "Implement simple applications that use Views",
+        "Identify advanced features such as stored procedures and triggers",
+        "Solve real time problems using database concepts"
+      ]
+    },
+    "22UAD405": {
+      "title": "Mini Project I",
+      "type": "Project",
+      "faculty": [
+        "Mr. T. Satheesh"
+      ],
+      "hours_in_timetable": 2
+    },
+    "OE-I": {
+      "title": "Open Elective I",
+      "type": "Theory",
+      "source_note": "The timetable identifies OE-I, but the supplied Semester III syllabus does not provide its specific title/content."
+    },
+    "PL": {
+      "title": "Placement",
+      "type": "Placement"
+    },
+    "TWM": {
+      "title": "Tutor Ward Meeting",
+      "type": "Meeting",
+      "faculty": [
+        "Mr. T. Satheesh"
+      ]
+    }
+  },
+  "timetable": {
+    "Monday": {
+      "I": "22UAD304",
+      "II": null,
+      "III": "22UAD304",
+      "IV": null,
+      "V": "OE-I",
+      "VI": "22UMA301",
+      "VII": "PL"
+    },
+    "Tuesday": {
+      "I": "22UMA301",
+      "II": "22UCS305",
+      "III": "22UAD302",
+      "IV": "22UAD301",
+      "V": "PL",
+      "VI": "22UAD303",
+      "VII": "PL"
+    },
+    "Wednesday": {
+      "I": "22UCS307",
+      "II": null,
+      "III": "22UCS307",
+      "IV": null,
+      "V": "OE-I",
+      "VI": "22UAD301",
+      "VII": "22UMA301"
+    },
+    "Thursday": {
+      "I": "22UAD303",
+      "II": "22UMA301",
+      "III": "22UAD302",
+      "IV": null,
+      "V": "22UAD301",
+      "VI": "22UAD405",
+      "VII": "22UAD405"
+    },
+    "Friday": {
+      "I": "22UAD303",
+      "II": null,
+      "III": "22UCS305",
+      "IV": "22UMA301",
+      "V": "22UAD301",
+      "VI": "22UAD302",
+      "VII": "OE-I"
+    },
+    "Saturday": {
+      "I": "PL",
+      "II": "PL",
+      "III": "22UAD301",
+      "IV": "22UCS305",
+      "V": "PL",
+      "VI": "PL",
+      "VII": "TWM"
+    }
+  },
+  "faculty": {
+    "source_note": "Relevant AIDS faculty details from the official faculty directory supplied by the user.",
+    "profiles": [
+      {
+        "name": "Mr. S Parthiban",
+        "designation": "Assistant Professor",
+        "qualification": "M.E.",
+        "department": "Artificial Intelligence and Data Science"
+      },
+      {
+        "name": "Mrs. N Padmashri",
+        "designation": "Assistant Professor (Sr.Gr.)",
+        "qualification": "M.E.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Machine Learning",
+          "Deep Learning",
+          "Data Science"
+        ]
+      },
+      {
+        "name": "Mrs. Suganya S",
+        "designation": "Assistant Professor",
+        "qualification": "M.E.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Image Processing",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Ms. Narmada Devi Ramadoss",
+        "designation": "Assistant Professor",
+        "qualification": "M.Tech.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "DBMS",
+          "Data Analysis",
+          "Software Testing"
+        ]
+      },
+      {
+        "name": "Dr. I Devi",
+        "designation": "Assistant Professor",
+        "qualification": [
+          "B.E.",
+          "M.E.",
+          "Ph.D."
+        ],
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Cloud Computing",
+          "Machine Learning",
+          "Blockchain"
+        ],
+        "role": "III AI-DS-B Class Advisor"
+      },
+      {
+        "name": "Dr. N Premkumar",
+        "designation": "Assistant Professor (Sl.Gr.)",
+        "qualification": "Ph.D.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Fog Computing",
+          "Edge Computing",
+          "Cloud Computing",
+          "Network Security",
+          "Data Science"
+        ]
+      },
+      {
+        "name": "Dr. S Rajalakshmi",
+        "designation": "Professor",
+        "qualification": [
+          "B.E.",
+          "M.E.",
+          "Ph.D."
+        ],
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Data Mining",
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Networks"
+        ],
+        "role": "HOD"
+      },
+      {
+        "name": "Dr. Srinivasan L",
+        "designation": "Associate Professor & Head",
+        "qualification": "Ph.D.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Text Mining",
+          "Artificial Intelligence",
+          "Machine Learning",
+          "IoT",
+          "Data Mining"
+        ]
+      },
+      {
+        "name": "Mr. T Raghunathan",
+        "designation": "Assistant Professor (Sr.Gr.)",
+        "qualification": [
+          "M.E.",
+          "B.Tech."
+        ],
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Wireless Sensor Networks",
+          "Cloud Computing",
+          "Machine Learning"
+        ]
+      },
+      {
+        "name": "Mr. T Satheesh",
+        "designation": "Assistant Professor (Sl.Gr.)",
+        "qualification": "M.E., (Ph.D)",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Machine Learning",
+          "Big Data Analytics",
+          "Internet Programming",
+          "Artificial Intelligence"
+        ]
+      },
+      {
+        "name": "Mrs. Dhaniya R D",
+        "designation": "Assistant Professor (O.G.)",
+        "qualification": "M.E. CSE",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Deep Learning",
+          "Medical Image Analysis"
+        ],
+        "role": "Timetable Incharge"
+      },
+      {
+        "name": "Mrs. Dhivya R",
+        "designation": "Assistant Professor (Sr.Gr.)",
+        "qualification": "M.E.",
+        "department": "Artificial Intelligence and Data Science",
+        "expertise": [
+          "Data Security",
+          "Data Science",
+          "Machine Learning",
+          "Cyber Security"
+        ]
+      }
+    ]
+  },
+  "mini_project": {
+    "course_code": "22UAD405",
+    "class": "II AI&DS B",
+    "batches": [
+      {
+        "batch": 1,
+        "domain": "Artificial Intelligence",
+        "mentor": "Dr. N. Premkumar",
+        "members": [
+          "Tejaswini B",
+          "Vinothini A",
+          "Sakthi M"
+        ]
+      },
+      {
+        "batch": 2,
+        "domain": "Artificial Intelligence",
+        "mentor": "Dr. I. Devi",
+        "members": [
+          "Shruthi V",
+          "Sastika M",
+          "Vignesh G"
+        ]
+      },
+      {
+        "batch": 3,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. S. Biruntha",
+        "members": [
+          "Sivaprakash P",
+          "Shivakartheek P",
+          "Vasanth K"
+        ]
+      },
+      {
+        "batch": 4,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. K. Karpagavadivu",
+        "members": [
+          "Pranesh S H",
+          "Rasswanth S",
+          "Shanmathi M"
+        ]
+      },
+      {
+        "batch": 5,
+        "domain": "Machine Learning",
+        "mentor": "Mr. T. Satheesh",
+        "members": [
+          "Pranitha J",
+          "Pradeebha S",
+          "Sabari Eshwaran A"
+        ]
+      },
+      {
+        "batch": 6,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. M. Sarmila",
+        "members": [
+          "Thara R",
+          "Yogalakshmi K T",
+          "Yaamini V M"
+        ]
+      },
+      {
+        "batch": 7,
+        "domain": "Machine Learning",
+        "mentor": "Ms. C. Jency",
+        "members": [
+          "Surya M",
+          "Sanjay S",
+          "Vignesh V"
+        ]
+      },
+      {
+        "batch": 8,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. D. Brindha",
+        "members": [
+          "Sanjai P T",
+          "Saravanakumar S",
+          "Yeshwanth G"
+        ]
+      },
+      {
+        "batch": 9,
+        "domain": "Machine Learning",
+        "mentor": "Mr. T. Raghunathan",
+        "members": [
+          "Pratheesh S Y",
+          "Santhiya S",
+          "Sri Saran S"
+        ]
+      },
+      {
+        "batch": 10,
+        "domain": "Machine Learning",
+        "mentor": "Ms. G. Brindha",
+        "members": [
+          "Sheik Shahin M",
+          "Sanjay Murugan M",
+          "Vinayak Yudhanu S"
+        ]
+      },
+      {
+        "batch": 11,
+        "domain": "Machine Learning",
+        "mentor": "Ms. S. Sowmyha",
+        "members": [
+          "Praveena G",
+          "Suprithadevi M",
+          "Prathiksha V"
+        ]
+      },
+      {
+        "batch": 12,
+        "domain": "Machine Learning",
+        "mentor": "Ms. R. Madhuramya",
+        "members": [
+          "Sowmita M K",
+          "Sweatha G",
+          "Ranjith Kumar R"
+        ]
+      },
+      {
+        "batch": 13,
+        "domain": "Machine Learning",
+        "mentor": "Ms. C. Divyarevathi",
+        "members": [
+          "Sudhan V L",
+          "Vasanth P",
+          "Vignesh S"
+        ]
+      },
+      {
+        "batch": 14,
+        "domain": "Web Development",
+        "mentor": "Ms. S. Pavithra",
+        "members": [
+          "Stephin Surya",
+          "Yaswand N",
+          "D. Elango"
+        ]
+      },
+      {
+        "batch": 15,
+        "domain": "Machine Learning",
+        "mentor": "Ms. N. Padmashri",
+        "members": [
+          "Ranjith P",
+          "Shanmugam M",
+          "Adhish"
+        ]
+      },
+      {
+        "batch": 16,
+        "domain": "Artificial Intelligence",
+        "mentor": "Mr. Parthiban",
+        "members": [
+          "M. Shalini",
+          "Rakshita P"
+        ]
+      },
+      {
+        "batch": 17,
+        "domain": "Artificial Intelligence",
+        "mentor": "Mrs. Narmadha Devi",
+        "members": [
+          "Sonika T",
+          "Thilagavathi V",
+          "Yasin H"
+        ]
+      },
+      {
+        "batch": 18,
+        "domain": "Artificial Intelligence",
+        "mentor": "Dr. N. Premkumar",
+        "members": [
+          "V. Vimya",
+          "Sweatha N"
+        ]
+      },
+      {
+        "batch": 19,
+        "domain": "Artificial Intelligence",
+        "mentor": "Dr. I. Devi",
+        "members": [
+          "Swathi S",
+          "Sreemathi G",
+          "Sarukkash R"
+        ]
+      },
+      {
+        "batch": 20,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. S. Biruntha",
+        "members": [
+          "Sriram S",
+          "Yashwanth M",
+          "Sri Sudhan R"
+        ]
+      },
+      {
+        "batch": 21,
+        "domain": "Artificial Intelligence",
+        "mentor": "Ms. K. Karpagavadivu",
+        "members": [
+          "Vipin T K",
+          "Sanjeev Kumar",
+          "Rithivik P P"
+        ]
+      },
+      {
+        "batch": 22,
+        "domain": "Artificial Intelligence",
+        "mentor": "Mr. T. Satheesh",
+        "members": [
+          "Varsha A",
+          "Yakesh Sri Narayanasamy S",
+          "Sri Varshini V"
+        ]
+      }
+    ]
+  },
+  "academic_calendar": {
+    "academic_year": "2026-2027",
+    "semester": "Odd Semester",
+    "applicable_to": "B.E./B.Tech Semester 3, 5 and 7 and M.E. Semester 3",
+    "events_readable_from_source": [
+      {
+        "date": "2026-06-25",
+        "event": "Reopening"
+      },
+      {
+        "date": "2026-06-26",
+        "event": "Muharram Holiday"
+      },
+      {
+        "date": "2026-08-15",
+        "event": "Independence Day"
+      },
+      {
+        "date": "2026-08-26",
+        "event": "Onam Holiday"
+      },
+      {
+        "date": "2026-09-04",
+        "event": "Krishna Jayanthi"
+      },
+      {
+        "date": "2026-09-14",
+        "event": "Vinayakar Chathurthi"
+      },
+      {
+        "date": "2026-10-02",
+        "event": "Gandhi Jayanthi"
+      },
+      {
+        "date": "2026-10-20",
+        "event": "Ayudha Pooja"
+      },
+      {
+        "date": "2026-10-21",
+        "event": "Vijayadashami"
+      },
+      {
+        "date": "2026-11-08",
+        "event": "Deepavali"
+      },
+      {
+        "date": "2026-11-09",
+        "event": "Holiday"
+      }
+    ],
+    "recurring": {
+      "sunday": "Sunday Holiday",
+      "working_saturdays": [
+        "2026-07-11",
+        "2026-08-15",
+        "2026-08-22",
+        "2026-09-19",
+        "2026-10-10",
+        "2026-10-24"
+      ]
+    },
+    "assessment_periods": [
+      {
+        "type": "Internal Test",
+        "period": "20-08-2026 to 29-08-2026",
+        "source_confidence": "readable calendar marking"
+      },
+      {
+        "type": "Internal Test",
+        "period": "19-10-2026 to 28-10-2026",
+        "source_confidence": "readable calendar marking"
+      },
+      {
+        "type": "ESE Practical",
+        "period": "November 2026",
+        "source_confidence": "calendar marking"
+      },
+      {
+        "type": "ESE Theory",
+        "period": "November 2026",
+        "source_confidence": "calendar marking"
+      }
+    ],
+    "source_note": "This is a photographed calendar; unclear small print is not reconstructed."
+  },
+  "timetable_staff_mapping": {
+    "22UMA301": [
+      "Dr. R. Kulandilvelu"
+    ],
+    "22UAD301": [
+      "Dr. I. Devi"
+    ],
+    "22UCS305": [
+      "Mr. T. Satheesh"
+    ],
+    "22UAD302": [
+      "Mrs. R. Madhuramya"
+    ],
+    "22UAD303": [
+      "Ms. S. Sowmyha"
+    ],
+    "22UAD304": [
+      "Dr. I. Devi",
+      "Ms. S. Pavithra",
+      "Ms. M. Sarmila"
+    ],
+    "22UCS307": [
+      "Mr. T. Satheesh",
+      "Ms. S. Sarmila",
+      "Ms. N. Padmashri"
+    ],
+    "22UAD405": [
+      "Mr. T. Satheesh"
+    ]
+  },
+  "classical_nlp": {
+    "normalization": [
+      "lowercase",
+      "whitespace normalization",
+      "punctuation handling",
+      "common spelling normalization"
+    ],
+    "tokenization": "word/phrase tokenization",
+    "entity_types": [
+      "DATE",
+      "DAY",
+      "TIME",
+      "PERIOD",
+      "COURSE_CODE",
+      "COURSE_NAME",
+      "FACULTY",
+      "TOPIC",
+      "UNIT",
+      "STUDENT",
+      "BATCH",
+      "DOMAIN"
+    ],
+    "intent_types": [
+      "NEXT_CLASS",
+      "CLASS_BY_DAY",
+      "FACULTY_FOR_CLASS",
+      "CLASS_TIME",
+      "CLASS_VENUE",
+      "SUBJECT_INFORMATION",
+      "SYLLABUS_TOPIC_LOCATION",
+      "UNIT_TOPICS",
+      "TOPIC_EXPLANATION",
+      "FACULTY_INFORMATION",
+      "ACADEMIC_CALENDAR",
+      "HOLIDAY_CHECK",
+      "INTERNAL_TEST",
+      "EXAM_PERIOD",
+      "MINI_PROJECT_MENTOR",
+      "MINI_PROJECT_BATCH",
+      "MINI_PROJECT_DOMAIN",
+      "STUDENT_BATCH_LOOKUP"
+    ]
+  },
+  "inference_rules": [
+    {
+      "id": "R01",
+      "name": "course_code_lookup",
+      "condition": "COURSE_CODE recognized",
+      "action": "retrieve course record"
+    },
+    {
+      "id": "R02",
+      "name": "course_name_lookup",
+      "condition": "course name matches stored course title",
+      "action": "retrieve course record"
+    },
+    {
+      "id": "R03",
+      "name": "day_period_lookup",
+      "condition": "DAY and PERIOD recognized",
+      "action": "retrieve timetable entry"
+    },
+    {
+      "id": "R04",
+      "name": "day_time_lookup",
+      "condition": "DAY and TIME recognized",
+      "action": "map time to period and retrieve timetable entry"
+    },
+    {
+      "id": "R05",
+      "name": "faculty_lookup",
+      "condition": "course is known",
+      "action": "retrieve assigned faculty"
+    },
+    {
+      "id": "R06",
+      "name": "syllabus_topic_lookup",
+      "condition": "topic matches stored syllabus topic",
+      "action": "return course and unit containing it"
+    },
+    {
+      "id": "R07",
+      "name": "unit_lookup",
+      "condition": "course and unit recognized",
+      "action": "return all topics in that unit"
+    },
+    {
+      "id": "R08",
+      "name": "faculty_profile_lookup",
+      "condition": "faculty recognized",
+      "action": "retrieve stored faculty profile"
+    },
+    {
+      "id": "R09",
+      "name": "mini_project_student_lookup",
+      "condition": "student matches project member",
+      "action": "return batch, domain and mentor"
+    },
+    {
+      "id": "R10",
+      "name": "calendar_lookup",
+      "condition": "date recognized",
+      "action": "check academic calendar event"
+    },
+    {
+      "id": "R11",
+      "name": "next_class",
+      "condition": "NEXT_CLASS intent plus current date/time",
+      "action": "find first applicable timetable period after current time"
+    },
+    {
+      "id": "R12",
+      "name": "holiday_override",
+      "condition": "calendar marks date as holiday",
+      "action": "report holiday instead of treating normal timetable as active"
+    },
+    {
+      "id": "R13",
+      "name": "ambiguous_faculty",
+      "condition": "course has multiple assigned faculty and no period is specified",
+      "action": "return all stored assigned faculty"
+    },
+    {
+      "id": "R14",
+      "name": "unknown_information",
+      "condition": "requested information is absent",
+      "action": "state that the information is not available in the stored academic data"
+    }
+  ]
+}
